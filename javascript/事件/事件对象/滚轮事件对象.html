@@ -18,7 +18,8 @@
 <body>
     <div></div>
     <script>
-        document.querySelector('div').onwheel = function () {
+        document.querySelector('div').onwheel = function (evt) {
+            console.log(evt.deltaX);
             console.log(event.deltaY);
             // console.log(event.deltaMode);
         }
